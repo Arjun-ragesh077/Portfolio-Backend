@@ -22,7 +22,7 @@ app.post('/contact', async (req, res) => {
   }
 
   const { error } = await supabase
-    .from('messages')
+    .from('message')
     .insert([{ name, email, message }]);
 
   if (error) {
@@ -36,7 +36,7 @@ app.post('/contact', async (req, res) => {
 // GET /messages — view all saved messages
 app.get('/messages', async (req, res) => {
   const { data, error } = await supabase
-    .from('messages')
+    .from('message')
     .select('*')
     .order('created_at', { ascending: false });
 
