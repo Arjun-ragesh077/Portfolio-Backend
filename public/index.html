@@ -4,14 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ARJUN RAGESH — Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg: #0a0a0a;
+      --bg: #ffffff;
       --fg: #111111;
       --muted: #888888;
       --line: #e0e0e0;
@@ -20,13 +18,13 @@
 
     html { scroll-behavior: smooth; }
 
- 
-.raleway-<uniquifier> {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <100>;
-  font-style: normal;
-}
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 18px;
+      line-height: 1.7;
+    }
 
     /* ── NAV ── */
     nav {
@@ -36,7 +34,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 1.4rem 3rem;
-      background: #0d1b2a;
+      background: var(--bg);
       border-bottom: 1px solid var(--line);
       z-index: 100;
     }
@@ -94,17 +92,16 @@
 
     h1 {
       font-size: clamp(2.8rem, 7vw, 5.5rem);
-      font-weight: 300;
-      color: blue;
+      font-weight: 600;
       line-height: 1.08;
-      letter-spacing: -0.15em;
+      letter-spacing: -0.02em;
       margin-bottom: 1.8rem;
       opacity: 0;
       animation: fadeUp 0.7s ease forwards 0.25s;
     }
 
     h1 em {
-      font-style: italy;
+      font-style: italic;
       font-weight: 400;
     }
 
@@ -133,7 +130,7 @@
       text-transform: uppercase;
       text-decoration: none;
       padding: 0.65rem 1.6rem;
-      border: 10px solid var(--fg);
+      border: 1px solid var(--fg);
       color: var(--fg);
       transition: background 0.2s, color 0.2s;
     }
@@ -453,7 +450,7 @@
           style="width:100%; border:1px solid #e0e0e0; padding:0.7rem 1rem; font-family:'EB Garamond',serif; font-size:1rem; outline:none; resize:vertical; background:#fff;"></textarea>
       </div>
       <button onclick="sendMessage()"
-        style="font-family:'DM Mono',monospace; font-size:0.78rem; letter-spacing:0.1em; text-transform:uppercase; padding:1rem 2.5rem; border:1px solid #111; background:#fff; color:#111; cursor:pointer; transition:background 0.2s, color 0.2s;"
+        style="font-family:'DM Mono',monospace; font-size:0.78rem; letter-spacing:0.1em; text-transform:uppercase; padding:0.65rem 1.6rem; border:1px solid #111; background:#fff; color:#111; cursor:pointer; transition:background 0.2s, color 0.2s;"
         onmouseover="this.style.background='#111';this.style.color='#fff'"
         onmouseout="this.style.background='#fff';this.style.color='#111'">
         Send Message
